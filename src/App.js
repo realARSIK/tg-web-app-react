@@ -1,9 +1,10 @@
 import { useEffect } from 'react';
-import './App.css';
 import { useTelegram } from './hooks/useTelegram';
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
+
 import Header from './components/Header/Header.jsx';
 import Button from './components/Button/Button.jsx';
-import { Route, Routes } from 'react-router-dom';
 import ProductList from './components/ProductList/ProductList.jsx';
 import Form from './components/Form/Form.jsx';
 

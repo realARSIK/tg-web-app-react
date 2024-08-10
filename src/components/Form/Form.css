@@ -1,43 +1,45 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
 }
 
 .input {
-    width: 100%;
-    color: var(--tg-theme-text-color);
-    background-color: var(--tg-theme-bg-color);
-    outline: none;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 15px;
+  width: 100%;
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 15px;
+  transition: 0.2s;
 }
 
 .input:hover,
 .input:focus {
-    border: 1px solid orange;
+  border: 1px solid orange;
 }
 
 .select {
-    height: 40px;
-    color: var(--tg-theme-text-color);
-    background-color: var(--tg-theme-bg-color);
-    outline: none;
-    border: 1px solid #000000;
-    border-radius: 4px;
-    padding: 10px;
-    margin-top: 15px;
+  height: 40px;
+  color: var(--tg-theme-text-color);
+  background: var(--tg-theme-bg-color);
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 15px;
+  transition: 0.2s;
 }
 
 .select:hover,
 .select:focus {
-    border: 1px solid orange;
+  border: 1px solid orange;
 }
 
 
 .label {
-    margin-top: 15px;
+  margin-top: 15px;
 }
