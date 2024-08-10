@@ -7,6 +7,7 @@
 
 .input {
     width: 100%;
+    outline: none;
     border: 1px solid #000000;
     border-radius: 8px;
     padding: 8px;
@@ -15,19 +16,19 @@
 
 .input:focus {
     border: 1px solid orange;
-    outline: 1px solid orange;
 }
 
 .select {
+    height: 40px;
+    outline: none;
     border: 1px solid #000000;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     margin-top: 15px;
 }
 
 .select:focus {
     border: 1px solid orange;
-    outline: 1px solid orange;
 }
 
 
