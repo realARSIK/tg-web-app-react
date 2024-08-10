@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: 'Montserrat';
     color: var(--tg-theme-text-color);
     background-color: var(--tg-theme-bg-color);
 }

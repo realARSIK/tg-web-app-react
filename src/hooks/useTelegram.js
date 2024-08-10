@@ -18,6 +18,6 @@ export function useTelegram() {
         onClose,
         onToggleButton,
         tg,
-        user: tg.initDataOnsafe?.user
+        user: tg.initDataOnsafe?.user,
     }
 }

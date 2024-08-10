@@ -1,9 +1,11 @@
 .button {
+    font-family: 'Montserrat';
     cursor: pointer;
     color: var(--tg-theme-text-color);
     background-color: var(--tg-theme-bg-color);
     border: none;
-    border: 1px solid #000000;
+    border: 1px solid var(--tg-theme-text-color);
+    border-radius: 4px;
     outline: none;
     padding: 10px 20px;
     transition: 0.2s;
