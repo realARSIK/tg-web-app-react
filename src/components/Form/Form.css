@@ -8,6 +8,7 @@
 .input {
     width: 100%;
     border: 1px solid #000000;
+    border-radius: 8px;
     padding: 8px;
     margin-top: 15px;
 }
@@ -19,7 +20,8 @@
 
 .select {
     border: 1px solid #000000;
-    padding: 10px;
+    border-radius: 8px;
+    padding: 20px;
     margin-top: 15px;
 }
 
