@@ -7,6 +7,7 @@ const Form = () => {
     const [city, setCity] = useState('')
     const [os, setOs] = useState('windows')
     const {tg} = useTelegram()
+    console.log('useTelegram - ', tg);
 
     const onSendData = useCallback(() => {
         const data = {
@@ -14,14 +15,15 @@ const Form = () => {
             city,
             os
         }
-
         tg.sendData(JSON.stringify(data))
     }, [country, city, os, tg])
 
     useEffect(() => {
-        tg.WebApp.onEvent('mainButtonClicked', onSendData)
-        return () => {
-            tg.WebApp.offEvent('mainButtonClicked', onSendData)
+        if (tg?.WebApp) {
+            tg.WebApp.onEvent('mainButtonClicked', onSendData)
+            return () => {
+                tg.WebApp.offEvent('mainButtonClicked', onSendData)
+            }
         }
     }, [onSendData, tg])
 
