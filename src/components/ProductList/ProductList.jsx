@@ -14,8 +14,10 @@ const products = [
   {id: 8, title: 'Iphone 15 pro max', price: 120000, description: 'Белый цвет'},
 ]
 
-const getTotalPrice = (items) => {
-  return items.reduce((acc, item) => acc += item.price, 0)
+const getTotalPrice = (items = []) => {
+  return items.reduce((acc, item) => {
+    return acc += item.price
+  }, 0)
 }
 
 const ProductList = () => {
@@ -47,8 +49,8 @@ const ProductList = () => {
   
   return (
     <>
-      <div className="ProductList">
-        {products.map((item) => {
+      <div className={'list'}>
+        {products.map(item => {
           <ProductItem 
             product={item}
             onAdd={onAdd}
