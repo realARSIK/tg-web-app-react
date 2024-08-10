@@ -5,7 +5,7 @@ import { useTelegram } from "../../hooks/useTelegram"
 const Form = () => {
     const [country, setCountry] = useState('')
     const [city, setCity] = useState('')
-    const [subject, setSubject] = useState('windows')
+    const [os, setOs] = useState('windows')
     const {tg} = useTelegram()
 
     useEffect(() => {
@@ -30,8 +30,8 @@ const Form = () => {
         setCity(e.target.value)
     }
 
-    const onChangeSubject = (e) => {
-        setSubject(e.target.value)
+    const onChangeOs = (e) => {
+        setOs(e.target.value)
     }
 
     return (
@@ -41,8 +41,8 @@ const Form = () => {
                 <input type="text" className="input" placeholder="Страна" value={country} onChange={onChangeCountry}/>
                 <input type="text" className="input" placeholder="Город" value={city} onChange={onChangeCity}/>
                 
-                <label className="label" htmlFor="oc">Какая у вас операционная сеть?</label>
-                <select value={subject} onChange={onChangeSubject} id="oc" className="select">
+                <label className="label" htmlFor="os">Какая у вас операционная сеть?</label>
+                <select value={os} onChange={onChangeOs} id="os" className="select">
                     <option value={"windows"}>Windows</option>
                     <option value={"macoc"}>MacOC</option>
                     <option value={"linux"}>Linux</option>
