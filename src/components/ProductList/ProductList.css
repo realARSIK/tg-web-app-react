@@ -1,9 +1,8 @@
 .list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 5px;
+  margin: 15px 0;
 }
 
-.item {
-  margin: 0 10px 10px 0;
-}
+/* .item {} */
