@@ -36,25 +36,23 @@ const ProductList = () => {
 
     setAddedItems(newItems)
 
-    useEffect(() => {
-      if(newItems.length === 0) {
-        tg.MainButton.hide()
-      } else {
-        tg.MainButton.show()
-        tg.MainButton.setParams({
-          text: `Купить ${getTotalPrice(newItems)}`
-        })
-      }
-    })
-
-    // if(newItems.length === 0) {
-    //   tg.MainButton.hide()
+    if(newItems.length === 0) {
+      tg.MainButton.hide()
+    }
     // } else {
     //   tg.MainButton.show()
     //   tg.MainButton.setParams({
     //     text: `Купить ${getTotalPrice(newItems)}`
     //   })
     // }
+
+    useEffect(() => {
+      if(newItems.length > 0) {
+        tg.MainButton.setParams({
+          text: `Купить ${getTotalPrice(newItems)}`
+        })
+      }
+    }, [tg])
   }
   
   return (
