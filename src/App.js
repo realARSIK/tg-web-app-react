@@ -4,12 +4,11 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import Header from './components/Header/Header.jsx';
-import Button from './components/Button/Button.jsx';
 import ProductList from './components/ProductList/ProductList.jsx';
 import Form from './components/Form/Form.jsx';
 
 function App() {
-  const {tg, onToggleButton} = useTelegram()
+  const {tg} = useTelegram()
 
   useEffect(() => {
     tg.ready()
@@ -23,7 +22,6 @@ function App() {
         <Route index element={<ProductList />}/>
         <Route path={'form'} element={<Form />}/>
       </Routes>
-      <Button onClick={onToggleButton}>Toggle</Button>
     </div>
     </>
   );
