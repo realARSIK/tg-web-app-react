@@ -1,17 +1,17 @@
 .button {
-    font-family: 'Montserrat';
-    cursor: pointer;
-    color: var(--tg-theme-text-color);
-    background-color: var(--tg-theme-bg-color);
-    border: none;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    outline: none;
-    padding: 10px 20px;
-    transition: 0.2s ease-in-out;
+  font-family: 'Montserrat';
+  cursor: pointer;
+  color: var(--tg-theme-text-color);
+  background-color: transparent;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 4px;
+  outline: none;
+  padding: 10px 20px;
+  transition: 0.2s ease-in-out;
 }
 
 .button:hover {
-    color: var(--tg-theme-text-color);
-    background-color: orange;
+  color: var(--color-white);
+  background: color-mix(in srgb, var(--color-violet), var(--color-red));
+  border: 1px solid var(--color-white);
 }

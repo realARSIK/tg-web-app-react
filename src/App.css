@@ -1,3 +1,12 @@
+:root {
+  --color-white: #ffffff;
+  --color-gray: #d7d7d7;
+  --color-light-gray: #e7e7e7;
+  --color-violet: rgba(238, 130, 238, 0.9);
+  --color-red: rgba(255, 0, 0, 0.9);
+  --color-grd-45-viol-red: linear-gradient(45deg, var(--color-violet), var(--color-red));
+}
+
 * {
   margin: 0;
   padding: 0;
