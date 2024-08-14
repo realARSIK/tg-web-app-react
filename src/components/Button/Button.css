@@ -2,7 +2,7 @@
   font-family: 'Montserrat';
   cursor: pointer;
   color: var(--tg-theme-text-color);
-  background-color: transparent;
+  background: transparent;
   border: 1px solid var(--color-light-gray);
   border-radius: 4px;
   outline: none;
